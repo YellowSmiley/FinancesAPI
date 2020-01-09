@@ -32,8 +32,10 @@ namespace FinancesAPI
                     .AllowAnyHeader();
                 });
             });
-            services.AddDbContext<AccountContext>(opt =>
+            services.AddDbContext<AccountsContext>(opt =>
                opt.UseInMemoryDatabase("AccountList"));
+            services.AddDbContext<PeopleContext>(opt =>
+               opt.UseInMemoryDatabase("PersonList"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

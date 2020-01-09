@@ -2,9 +2,9 @@
 
 namespace FinancesAPI.Models
 {
-    public class AccountContext : DbContext
+    public class AccountsContext : DbContext
     {
-        public AccountContext(DbContextOptions<AccountContext> options) : base(options) { }
+        public AccountsContext(DbContextOptions<AccountsContext> options) : base(options) { }
         public DbSet<Account> Accounts { get; set; }
     }
 }
