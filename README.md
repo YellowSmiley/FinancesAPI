@@ -1,4 +1,2 @@
 # FinancesAPI
-An API that allows CRUD opetations for Incomes and Expenditures
-
-This was created using the https://www.dotnetcurry.com/entityframework/1348/ef-core-web-api-crud-operations tutorial
+A .NET Core API that allows CRUD opetations for Accounts and People and stores them to memory using Entitiy Framework. This is used by https://github.com/YellowSmiley/AngularJsFinance
